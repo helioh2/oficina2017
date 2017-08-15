@@ -1,0 +1,63 @@
+
+Programação, o que é... o que envolve...
+
+- Algoritmos
+- Resolução de problemas
+- Automatizar processos, tarefas
+- Codificação
+- Ideias
+- Projeto / design
+- Conhecimento
+- Domínio
+- Intelecto / raciocínio
+- Criatividade / processo criativo
+- Tempo
+- Pesquisa
+- Teste
+- Paciência
+- Determinação
+- Pessimismo (pensar no que pode dar errado, o pior que pode acontecer)
+- Objetivo / foco
+- Buscar o simples: KISS (Keep it Simple Stupid!)
+- Não complique
+- Lidar com a complexidade
+- Dividir para conquistar
+	- Destrinchar o problema
+- Entender o problema !!!!!!
+	- Análise
+- Matemática
+- Trabalho em equipe
+- Conhecimentos de computação
+- Café (zuera never ends)
+
+
+O que seria um programa de qualidade?
+
+O que o usuário vê:
+- Usabilidade
+- Rapidez (eficiência, desempenho) - Velocidade, Uso de recursos - Eficiência do algoritmo, da linguagem, do sistema operacional, da rede, etc.
+- Eficácia / funcionalidades
+- Confiabilidade
+- Segurança
+- Portabilidade
+
+O que o desenvolvedor vê:
+- Legibilidade
+- Manutenibilidade (fácil de manter)
+- Flexibilidade
+- Escalabilidade
+- Não usar POG (Programação Orientada a Gambiarras)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
