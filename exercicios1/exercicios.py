@@ -1,4 +1,4 @@
-import pytest
+import unittest
 
 ''' EXERCÍCIOS
 Obrigatorio UTILIZAR RECEITA DE PROJETO!!!
@@ -12,13 +12,6 @@ comentarios na frente de #).
 '''
 1. Defina uma funcao que encontre o maior valor entre 2 valores dados
 '''
-
-def maior(a,b):
-    return a if a >= b else b
-
-def test_maior():
-    assert maior(3,5) == 5
-
 
 
 '''
@@ -101,7 +94,9 @@ unidades de medida do sistema ingles:
 '''Para cada nova funcao criada, voce deve criar uma funcao
 dentro da classe Test para testá-la, conforme o template
 '''
-##class Test(unittest.TestCase):
+class Test(unittest.TestCase):
+
+    pass #retirar após colocar primeiro teste
 
     #...
 ''' <<template>>
@@ -111,4 +106,4 @@ def test_<nome_funcao>(self):
     ...
 '''
 
-##unittest.main()  #não excluir
+unittest.main()  #não excluir
