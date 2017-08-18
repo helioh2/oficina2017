@@ -79,6 +79,52 @@ def fn_para_proximidade(p):
 '''
 
 
+''' 
+Exemplos de dados compostos:
+'''
+
+''' Maneira 1: dado imutavel usando namedtuple'''
+
+from collections import namedtuple
+
+Pessoa = namedtuple("Pessoa", "nome endereco cpf") #nome, endereco e cpf são os campos
+'''
+Pessoa é criada como: Pessoa(String String Int)
+interp. uma pessoa com nome, endereço e cpf
+Ex:
+'''
+FULANO = Pessoa("Fulano", "Rua Pioneiro", 28282828)
+BELTRANO = Pessoa("Beltrano", "Av Kennedy", 636363)
+'''Template para dados do tipo Pessoa:
+def fn_para_pessoa(p):
+    ... p.nome
+        p.endereco
+        p.cpf           #faz algo com os campos do tipo Pessoa
+'''
+
+
+''' Maneira 2: dados mutaveis usando class'''
+
+class Aluno:
+    '''
+    Aluno é criado como: Aluno(String, String, Int)
+    interp. aluno com nome, curso e GRR
+    exemplos:
+    JOAO = Aluno("João", "Computação", 20187272)
+    MARIA = Aluno("Maria", "Exatas", 201837372
+    '''
+    def __init__(self, nome, curso, grr):  #construtor com os campos do tipo
+        self.nome = nome
+        self.curso = curso
+        self.grr = grr
+    '''
+    Template para dados do tipo Aluno:
+    def fn_para_aluno(a):
+        ... a.nome
+            a.curso
+            a.grr         #faz algo com os campos do aluno
+    '''
+
 
 
 

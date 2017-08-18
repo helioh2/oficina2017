@@ -1,5 +1,8 @@
+import unittest
+
 '''EXERCÍCIOS:
-O uso das receitas de projeto é obrigatório!!
+O uso das receitas de projeto é obrigatório!! Os testes devem estar na classe Test no final
+do arquivo.
 '''
 
 '''
@@ -18,27 +21,11 @@ PROBLEMA 1A: Considere a definição acima.
 
 Projete uma função chamada 'eh_adolescente' que determina se uma pessoa
 de uma idade específica é um adolescente (i.e., entre a idade 13 a 19)
+(dica: se eh adolescente, retorne true, senão, retorne false
 '''
 
 ###escreva o codigo aqui
 
-'''
-PROBLEMA 1B:
-
-Projete uma definição de dados chamada IdadeEmMeses para representar
-a idade da pessoa em meses.
-'''
-
-###escreva a definição aqui
-
-
-'''
-PROBLEMA 1C:
-Projete uma função chamada 'meses-de-idade' que consome a idade da
-pessoa em anos e devolve a idade da pessoa em meses.
-'''
-
-###escreva o codigo aqui
 
 
 
@@ -131,6 +118,56 @@ continua morto.
 '''
 
 ###escreva definicoes e codigo aqui
+
+
+
+'''
+---------------------//--------------
+5.
+
+PROBLEMA 5A:
+
+Projete uma definição de dados para representar um filme, incluindo  
+título, custo de produção, e ano que foi lançado.
+
+Para ajudar a criar alguns exemplos, abaixo temos alguns fatos sobre alguns filmes: 
+"Titanic" - custo: 200000000 lancamento: 1997
+"Avatar" - custo: 237000000 lancamento: 2009
+"The Avengers" - custo: 220000000 lancamento: 2012
+
+No entanto, sinta-se livre para pesquisar.
+DICA: terá que usar namedtuple ou class para criar um tipo composto (veja arquivo de exemplos)
+'''
+
+###escreva a definição aqui
+
+
+'''
+PROBLEMA 5B:
+
+Projete uma função que RECEBE DOIS filmes e retorne
+o título do filme lançado mais recentemente.
+'''
+
+
+
+
+'''Para cada nova funcao criada, voce deve criar uma funcao
+dentro da classe Test para testá-la, conforme o template
+'''
+class Test(unittest.TestCase):
+
+    pass #retirar após colocar primeiro teste
+
+    #...
+    ''' <<template>>
+    def test_<nome_funcao>(self):
+        self.assertEqual(<chamada_da_funcao>, <resultado_esperado>)
+        self.assertEqual(<chamada_da_funcao>, <resultado_esperado>)
+        ...
+    '''
+
+unittest.main()  #não excluir
 
 
 
