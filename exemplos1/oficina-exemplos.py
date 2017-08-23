@@ -26,7 +26,7 @@ class MeusTestes(unittest.TestCase):
     '''
 
 
-unittest.main()  #não excluir
+# unittest.main()  #não excluir se rodar no idle. Tirar se rodar no Pycharm
 
 
 

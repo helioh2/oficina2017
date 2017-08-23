@@ -1,7 +1,7 @@
 
 def contagem_regressiva():
-for k in range(10,-1,-1):
-print(k)
+      for k in range(10,-1,-1):
+            print(k)
 
 def contagem_regressiva_rec(k):
       print(k)
