@@ -5,11 +5,14 @@ import unittest
 Float -> Float
 Retorna o dobro do valor
 '''
-##def dobro(n):
-##    pass
+# def dobro(n):
+#     pass
 
 def dobro(n):
     return n*2
+
+
+
 
 class MeusTestes(unittest.TestCase):
     

@@ -1,7 +1,7 @@
 
 from collections import namedtuple
 
-Pessoa = namedtuple("Pessoa", "nome cpf telefone endereco")
+Pessoa = namedtuple("Pessoa", "nome,cpf,telefone,endereco")
 
 p1 = Pessoa("Fulano", 8383838, "+55 44 289292", "Rua Pioneiro")
 
@@ -31,7 +31,7 @@ print("A nave está na posicao", ponto_origem.x, ",", ponto_origem.y)
 
 '''Definição de dados (USANDO A RECEITA)'''
 
-Musica = namedtuple("Musica", "titulo artista album genero duracao")
+Musica = namedtuple("Musica", "titulo,artista,album,genero,duracao")
 '''
 Musica é criado dessa forma: Musica(String, String, String, String, Int)
 interp. representa uma musica com as informacoes
@@ -74,7 +74,7 @@ class MeusTestes(unittest.TestCase):
 
 
 
-unittest.main()  # não excluir
+# unittest.main()  # não excluir
 
 
 

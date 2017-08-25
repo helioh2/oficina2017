@@ -8,3 +8,7 @@ def trata_tecla(estado, tecla):
     else:
         ... estado
 '''
+
+
+verdadeiro = True
+falso = False
