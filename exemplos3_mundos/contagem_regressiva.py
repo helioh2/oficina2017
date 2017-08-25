@@ -1,6 +1,5 @@
 
 import unittest
-import pygame
 from universe import *
 
 # Preparacao da Tela:
@@ -26,7 +25,6 @@ def fn_para_contagem_regressiva(cont):
 
 '''FUNÇÕES:'''
 
-
 '''tick: ContagemRegressiva -> ContagemRegressiva
 Diminui contagem regressiva até o zero
 '''
@@ -42,9 +40,13 @@ def tick(cr):
 def desenha_contagem(cr):
     fonte = pg.font.SysFont("monospace", 40)
     ## render: String, Int, Cor
-    texto = fonte.render(str(cr), 1, (255, 0, 0))
+    if cr > 0:
+        texto = fonte.render(str(cr), 1, (255, 0, 0))
+    else:
+        texto = fonte.render("FIM!", 1, (255, 0, 0))
+
     ## blit: String, (Int, Int)
-    tela.blit(texto, (LARGURA//2 - 20, ALTURA//2 - 20))
+    tela.blit(texto, (10, ALTURA//2 - 20))
 
 
 '''main: ContagemRegressiva -> ContagemRegressiva'''

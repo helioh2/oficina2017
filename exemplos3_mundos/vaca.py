@@ -54,7 +54,5 @@ def trata_tecla(vaca, tecla):
     return vaca
 
 
-def trata_mouse(vaca, x, y):
-    return vaca
 
-big_bang(VACA_INICIAL, tela=tela, quando_tick=mover, desenhar=desenha, quando_tecla=trata_tecla, quando_mouse=trata_mouse)
+big_bang(VACA_INICIAL, tela=tela, quando_tick=mover, desenhar=desenha, quando_tecla=trata_tecla)
