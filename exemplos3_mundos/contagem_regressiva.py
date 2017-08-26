@@ -49,12 +49,20 @@ def desenha_contagem(cr):
     tela.blit(texto, (10, ALTURA//2 - 20))
 
 
+def trata_tecla(cr, tecla):
+    if tecla == pg.K_SPACE:
+        return 10
+    else:
+        return cr
+
+
 '''main: ContagemRegressiva -> ContagemRegressiva'''
 def main(cr):
     big_bang(cr,tela=tela,\
              quando_tick=tick,\
              desenhar=desenha_contagem,\
-             frequencia=1)
+             frequencia=1,
+             quando_tecla=trata_tecla)
 
 
 

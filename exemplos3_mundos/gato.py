@@ -27,7 +27,7 @@ Exemplos:
 '''
 GATO_INICIAL = 0
 GATO_MEIO= LARGURA//2
-GATO_FIM = LARGURA//2
+GATO_FIM = LARGURA
 '''Template para funcoes que recebem Gato:
 def fn_para_gato(g):
     ... g    #faz algo com o g
@@ -40,7 +40,8 @@ def fn_para_gato(g):
 
 '''mover: Gato -> Gato'''
 def mover(gato):
-    return gato + 1
+    return gato + 3
+
 
 '''desenha: Gato -> Imagem'''
 def desenha(gato):
@@ -61,15 +62,24 @@ def trata_mouse(gato, x, y, ev):
     else:
         return gato
 
+'''parar: Gato -> Boolean'''
+def parar(gato):
+    if gato >= LARGURA//2:
+        return True
+    else:
+        return False
+
+
 
 def main(gato):
     big_bang(0, \
-             tela=tela, frequencia=28, \
+             tela=tela, \
              quando_tick=mover, \
              desenhar=desenha, \
              quando_tecla=trata_tecla, \
-             quando_mouse=trata_mouse)
+             quando_mouse=trata_mouse, \
+             parar_quando=parar)
 
 
-# main(0)  #deixar comentado. excluir só quando chamar
+main(0)  #deixar comentado. excluir só quando chamar
 
