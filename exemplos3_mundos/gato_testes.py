@@ -9,7 +9,7 @@ import unittest
 class MeusTestes(unittest.TestCase):
     def testMover(self):
         self.assertEqual(mover(2), 5)
-        self.assertEqual(mover(100), 105)
+        self.assertEqual(mover(100), 103)
 
     def testTrata_tecla(self):
         self.assertEqual(  trata_tecla(100, pg.K_SPACE), 0  )

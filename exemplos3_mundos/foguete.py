@@ -14,8 +14,13 @@ TELA = pg.display.set_mode((LARGURA, ALTURA))
 
 try:
     IMG_FOGUETE = pg.image.load('foguete.png')    #os.path.join('', 'cat1.png'))
+    IMG_FOGUETE = pg.transform.scale(IMG_FOGUETE, (75,120))
 except:
     IMG_FOGUETE = pg.Surface((100,100),pg.SRCALPHA)  #imagem vazia para o caso de nao funcionar o carregamento
+
+
+L_FOGUETE = IMG_FOGUETE.get_width()
+A_FOGUETE = IMG_FOGUETE.get_height()
 
 #X = 200  #numero magico
 X = LARGURA // 2
@@ -45,52 +50,27 @@ def fn_para_foguete(y):
 
 '''
 desce: Foguete -> Foguete
-Faz o foguete descer 3 pixels no eixo y
-!!!
+Faz o foguete descer 3 pixels no eixo y, se não estiver no chao
 '''
 def desce(y):
-    pass
+    if y > ALTURA or y < 0:
+        return "Foguete invalido"
+    else:
+        if y < ALTURA - 3:
+            return y + 3
+        else:
+            return ALTURA
 
 
 '''
 desenha: Foguete -> Imagem
-Desenha...
+Desenha foguete na tela
 !!!
 '''
 def desenha(y):
-    pass
+    # pg.draw.circle(TELA, (134,171,34), (X, y), 20 )
+    TELA.blit(IMG_FOGUETE, (X - L_FOGUETE//2, y - A_FOGUETE +35))
 
-
-'''
-trata_tecla: EstadoMundo, EventoTecla -> EstadoMundo
-Quando teclar ... produz ... <apagar caso não precise usar>
-!!!
-Template:
-
-def trata_tecla(estado, tecla):
-    if tecla == pg.K_SPACE:
-        ... estado
-    else:
-        ... estado
-'''
-
-'''
-trata_mouse: EstadoMundo, Int, Int, EventoMouse -> EstadoMundo:
-Quando fazer ... nas posições x y no mouse produz ...   <apagar caso não precise usar>
-!!!
-Template:
-
-def trata_mouse(estado, x, y, ev):
-    if ev == pg.MOUSEBUTTONDOWN:
-        ... estado
-    elif ev == pg.MOUSEBUTTONUP:
-        ... estado
-    elif ev == pg.MOUSEMOTION:
-        ... estado
-    else:
-        ... estado
-
-'''
 
 ''' ================= '''
 ''' Main (Big Bang):
@@ -102,6 +82,5 @@ def main():
     big_bang(F_INICIAL, tela=TELA,
              quando_tick=desce, \
              desenhar=desenha)
-
 
 main()
