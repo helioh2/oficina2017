@@ -14,16 +14,16 @@ TELA = pg.display.set_mode((LARGURA, ALTURA))
 
 try:
     IMG_FOGUETE = pg.image.load('foguete.png')    #os.path.join('', 'cat1.png'))
-    IMG_FOGUETE = pg.transform.scale(IMG_FOGUETE, (75,120))
+    L_FOGUETE = 60
+    A_FOGUETE = 100
+    IMG_FOGUETE = pg.transform.scale(IMG_FOGUETE, (L_FOGUETE, A_FOGUETE))
 except:
     IMG_FOGUETE = pg.Surface((100,100),pg.SRCALPHA)  #imagem vazia para o caso de nao funcionar o carregamento
 
 
-L_FOGUETE = IMG_FOGUETE.get_width()
-A_FOGUETE = IMG_FOGUETE.get_height()
-
-#X = 200  #numero magico
+# X = 200  #numero magico
 X = LARGURA // 2
+
 
 '''==================='''
 '''# Definições de dados: '''
@@ -56,21 +56,19 @@ def desce(y):
     if y > ALTURA or y < 0:
         return "Foguete invalido"
     else:
-        if y < ALTURA - 3:
-            return y + 3
-        else:
+        if y >= ALTURA - 2:
             return ALTURA
+        else:
+            return y + 3
 
 
 '''
 desenha: Foguete -> Imagem
 Desenha foguete na tela
-!!!
 '''
 def desenha(y):
-    # pg.draw.circle(TELA, (134,171,34), (X, y), 20 )
-    TELA.blit(IMG_FOGUETE, (X - L_FOGUETE//2, y - A_FOGUETE +35))
-
+    # pg.draw.circle(TELA, (203,230,67), (X, y), 20)
+    TELA.blit(IMG_FOGUETE, (X - L_FOGUETE//2, y - A_FOGUETE + 28))
 
 ''' ================= '''
 ''' Main (Big Bang):
@@ -82,5 +80,7 @@ def main():
     big_bang(F_INICIAL, tela=TELA,
              quando_tick=desce, \
              desenhar=desenha)
+
+
 
 main()
