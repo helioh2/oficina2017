@@ -25,10 +25,10 @@ except:
 '''# Definições de dados: '''
 
 from collections import namedtuple
-Vaca = namedtuple("Vaca", "x, dx")
+Vaca = namedtuple("Vaca", "x, dx")  #estrutura da Vaca
 
 ''' Vaca pode ser criada como: Vaca(Int[0,LARGURA], Int)
-interp.: representa a posicao a x da vaca, e o deslocamento
+interp.: representa a posicao x da vaca, e o deslocamento
 a cada tick no eixo x, chamado de dx
 Exemplos:
 '''
@@ -37,71 +37,65 @@ VACA_MEIO = Vaca(LARGURA//2, 3)
 VACA_FIM = Vaca(LARGURA, 3)
 VACA_VIRANDO = Vaca(LARGURA, -3)
 VACA_VOLTANDO = Vaca(LARGURA//2, -3)
+'''
+Template para funções que recebem Vaca:
+def fn_para_vaca(v):
+    if v.x < 0 or v.x > LARGURA:
+        return "Erro: vaca invalida"
+    else:
+        ... v.x
+            v.dx
+
+'''
 
 
 '''===================='''
 ''' Funções: '''
 
 '''
-tock: EstadoMundo -> EstadoMundo
-Produz o próximo ...
+andar: Vaca -> Vaca
+Produz a próxima vaca (ou seja, fazer ela andar)
 !!!
-def tock(estado):
+'''
+def andar(v):
     pass
-'''
+
 
 '''
-desenha: EstadoMundo -> Imagem
-Desenha...
+desenha: Vaca -> Imagem
+Desenha a vaca na tela
 !!!
-def desenha(estado):
+'''
+def desenha(v):
     pass
-'''
+
 
 '''
-trata_tecla: EstadoMundo, EventoTecla -> EstadoMundo
-Quando teclar ... produz ... <apagar caso não precise usar>
+trata_tecla: Vaca, EventoTecla -> Vaca
+Quando teclar espaço, inverte a direção da vaca
 !!!
-Template:
-
-def trata_tecla(estado, tecla):
-    if tecla == pg.K_SPACE:
-        ... estado
-    else:
-        ... estado
 '''
 
-'''
-trata_mouse: EstadoMundo, Int, Int, EventoMouse -> EstadoMundo:
-Quando fazer ... nas posições x y no mouse produz ...   <apagar caso não precise usar>
-!!!
-Template:
+def trata_tecla(v, tecla):
+    pass
+    # if tecla == pg.K_SPACE:
+    #     ... estado
+    # else:
+    #     ... estado
 
-def trata_mouse(estado, x, y, ev):
-    if ev == pg.MOUSEBUTTONDOWN:
-        ... estado
-    elif ev == pg.MOUSEBUTTONUP:
-        ... estado
-    elif ev == pg.MOUSEMOTION:
-        ... estado
-    else:
-        ... estado
 
-'''
 
 ''' ================= '''
 ''' Main (Big Bang):
 '''
 
 ''' EstadoMundo -> EstadoMundo '''
-''' inicie o mundo com ... 
+''' inicie o mundo com main(VACA_INICIAL) '''
+
 def main(inic):
-    big_bang(inic, tela=tela, frequencia=XX, \
-             quando_tick=tock, \
-             desenhar=desenha, \
-             quando_tecla=..., \
-             quando_mouse=..., \
-             parar_quando=...)           
+    big_bang(inic, tela=TELA,
+             quando_tick=andar,
+             desenhar=desenha,
+             quando_tecla=trata_tecla)
 
-
-'''
+# main(VACA_INICIAL)
