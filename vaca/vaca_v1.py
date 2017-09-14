@@ -20,6 +20,7 @@ except:
     IMG_VACA_VORTANO = pg.Surface((100,100),pg.SRCALPHA)
     print("ERRO: Imagens nao foram carregadas.")
 
+Y = ALTURA//2
 
 '''==================='''
 '''# Definições de dados: '''
@@ -55,10 +56,31 @@ def fn_para_vaca(v):
 '''
 andar: Vaca -> Vaca
 Produz a próxima vaca (ou seja, fazer ela andar)
-!!!
 '''
 def andar(v):
-    pass
+    if v.x < 0 or v.x > LARGURA:
+        return "Erro: vaca invalida"
+    else:
+        #calcula novo dx
+        novo_dx = v.dx
+        if (v.x == LARGURA and v.dx > 0) \
+                or (v.x == 0 and v.dx < 0):  #se vaca bateu na parede
+            novo_dx = - v.dx
+        #usar depurador (debugger)
+
+        #calcula novo x
+        novo_x = v.x + novo_dx
+
+        if novo_x > LARGURA:
+            novo_x = LARGURA
+        elif novo_x < 0:
+            novo_x = 0
+
+
+        # montagem da nova vaca (novo estado)
+        nova_vaca = Vaca(novo_x, novo_dx)
+        return nova_vaca
+
 
 
 '''
@@ -67,7 +89,7 @@ Desenha a vaca na tela
 !!!
 '''
 def desenha(v):
-    pass
+    TELA.blit(IMG_VACA_INO, (v.x, Y))
 
 
 '''
@@ -98,4 +120,4 @@ def main(inic):
              desenhar=desenha,
              quando_tecla=trata_tecla)
 
-# main(VACA_INICIAL)
+main(VACA_INICIAL)
