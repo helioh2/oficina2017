@@ -5,6 +5,8 @@ import sys, os
 
 COR_BRANCO = (255, 255, 255)
 
+
+
 def big_bang(inic, tela,
              quando_tick=lambda e: e, \
              frequencia=28, \
@@ -12,6 +14,10 @@ def big_bang(inic, tela,
              quando_tecla=lambda e, k: e, \
              quando_mouse=lambda e, x, y, ev: e, \
              parar_quando=lambda e: False):
+
+    def desenha_tela():
+        tela.fill(COR_BRANCO)
+        desenhar(estado)
 
     pg.init()
     estado = inic
@@ -33,14 +39,15 @@ def big_bang(inic, tela,
 
             if event.type == pg.KEYDOWN:
                 estado = quando_tecla(estado, event.key)
+                desenha_tela()
 
             elif event.type in [pg.MOUSEBUTTONDOWN, pg.MOUSEBUTTONUP, pg.MOUSEMOTION]:
                 x, y = pg.mouse.get_pos()
                 estado = quando_mouse(estado, x, y, event.type)
+                desenha_tela()
 
         estado = quando_tick(estado)
 
-        tela.fill(COR_BRANCO)
-        desenhar(estado)
+        desenha_tela()
 
         clock.tick(frequencia)

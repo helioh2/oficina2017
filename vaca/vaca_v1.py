@@ -22,6 +22,9 @@ except:
 
 Y = ALTURA//2
 
+PAREDE_ESQUERDA = 0 + IMG_VACA_INO.get_width()//2
+PAREDE_DIREITA = LARGURA - IMG_VACA_INO.get_width()//2
+
 '''==================='''
 '''# Definições de dados: '''
 
@@ -33,8 +36,8 @@ interp.: representa a posicao x da vaca, e o deslocamento
 a cada tick no eixo x, chamado de dx
 Exemplos:
 '''
-VACA_INICIAL = Vaca(0, 3)
-VACA_MEIO = Vaca(LARGURA//2, 3)
+VACA_INICIAL = Vaca(PAREDE_ESQUERDA, 3)
+# VACA_MEIO = Vaca(LARGURA//2, 3)
 VACA_FIM = Vaca(LARGURA, 3)
 VACA_VIRANDO = Vaca(LARGURA, -3)
 VACA_VOLTANDO = Vaca(LARGURA//2, -3)
@@ -63,18 +66,18 @@ def andar(v):
     else:
         #calcula novo dx
         novo_dx = v.dx
-        if (v.x == LARGURA and v.dx > 0) \
-                or (v.x == 0 and v.dx < 0):  #se vaca bateu na parede
+        if (v.x == PAREDE_DIREITA and v.dx > 0) \
+                or (v.x == PAREDE_ESQUERDA and v.dx < 0):  #se vaca bateu na parede
             novo_dx = - v.dx
         #usar depurador (debugger)
 
         #calcula novo x
         novo_x = v.x + novo_dx
 
-        if novo_x > LARGURA:
-            novo_x = LARGURA
-        elif novo_x < 0:
-            novo_x = 0
+        if novo_x > PAREDE_DIREITA:
+            novo_x = PAREDE_DIREITA
+        elif novo_x < PAREDE_ESQUERDA:
+            novo_x = PAREDE_ESQUERDA
 
 
         # montagem da nova vaca (novo estado)
@@ -89,7 +92,14 @@ Desenha a vaca na tela
 !!!
 '''
 def desenha(v):
-    TELA.blit(IMG_VACA_INO, (v.x, Y))
+    if v.dx < 0:
+        TELA.blit(IMG_VACA_VORTANO,
+                  (v.x - IMG_VACA_VORTANO.get_width()//2,
+                   Y - IMG_VACA_VORTANO.get_height()//2))
+    else:
+        TELA.blit(IMG_VACA_INO,
+                  (v.x - IMG_VACA_INO.get_width()//2,
+                   Y - IMG_VACA_INO.get_height()//2))
 
 
 '''
@@ -99,11 +109,11 @@ Quando teclar espaço, inverte a direção da vaca
 '''
 
 def trata_tecla(v, tecla):
-    pass
-    # if tecla == pg.K_SPACE:
-    #     ... estado
-    # else:
-    #     ... estado
+    if tecla == pg.K_SPACE:
+        nova_vaca = Vaca(x=v.x, dx= -v.dx)
+        return nova_vaca
+    #else
+    return v
 
 
 
@@ -121,3 +131,4 @@ def main(inic):
              quando_tecla=trata_tecla)
 
 main(VACA_INICIAL)
+
