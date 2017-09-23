@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73a083ca-ab37-47d0-b3b7-f52687934c10" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/oficina2017.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+    <list default="true" id="ca26220f-981c-4791-8483-b84531c8f832" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vaca/chupacabra.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vaca/vaca_v2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vaca/test_vaca.py" afterPath="$PROJECT_DIR$/vaca/test_vaca_v1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vaca/vaca_v1.py" afterPath="$PROJECT_DIR$/vaca/vaca_v1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vaca/vaca_v1_tests.py" afterPath="$PROJECT_DIR$/vaca/vaca_v1_tests.py" />
     </list>
-    <ignored path="oficina2017.iws" />
-    <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,22 +14,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="oficina2017" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vaca_v1_tests.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vaca/vaca_v1_tests.py">
+      <file leaf-file-name="test_vaca_v1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="33">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="universe.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemplos3_mundos/universe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="universe.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vaca/universe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contagem_regressiva.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exemplos3_mundos/contagem_regressiva.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1608">
+              <caret line="68" column="34" lean-forward="false" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,19 +61,31 @@
       <file leaf-file-name="vaca_v1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vaca/vaca_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+            <state relative-caret-position="192">
+              <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gato.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exemplos3_mundos/gato.py">
+      <file leaf-file-name="vaca_v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vaca/vaca_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="997">
-              <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+            <state relative-caret-position="264">
+              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_vaca_v2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" column="54" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,9 +100,12 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
-    <dirStrings>
-      <dir>$PROJECT_DIR$/exemplos3_mundos</dir>
-    </dirStrings>
+    <findStrings>
+      <find>Y</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Y_VACA</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,38 +113,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gato.py" />
-        <option value="$PROJECT_DIR$/universe.py" />
-        <option value="$PROJECT_DIR$/vaca.py" />
-        <option value="$PROJECT_DIR$/exemplos1/cont_regressiva.py" />
-        <option value="$PROJECT_DIR$/exercicios2/exemplo_composto2.py" />
-        <option value="$PROJECT_DIR$/exercicios2/exemplo_compostos.py" />
-        <option value="$PROJECT_DIR$/exercicios2/exemplo_compostos2408.py" />
-        <option value="$PROJECT_DIR$/universe/templates.py" />
-        <option value="$PROJECT_DIR$/exemplos1/aula3-2.py" />
-        <option value="$PROJECT_DIR$/exemplos1/oficina-exemplos.py" />
-        <option value="$PROJECT_DIR$/exemplos2/testepygame.py" />
-        <option value="$PROJECT_DIR$/universe/vaca.py" />
-        <option value="$PROJECT_DIR$/universe/contagem_regressiva.py" />
-        <option value="$PROJECT_DIR$/exemplos3_mundos/contagem_regressiva.py" />
-        <option value="$PROJECT_DIR$/exemplos3_mundos/testepygame.py" />
-        <option value="$PROJECT_DIR$/exemplos3_mundos/gato.py" />
-        <option value="$PROJECT_DIR$/exemplos3_mundos/foguete_testes.py" />
-        <option value="$PROJECT_DIR$/exemplos3_mundos/foguete.py" />
-        <option value="$PROJECT_DIR$/vaca_v1.py" />
-        <option value="$PROJECT_DIR$/exemplos3_mundos/gato_testes.py" />
-        <option value="$PROJECT_DIR$/exercicios3/semaforo.py" />
+        <option value="$PROJECT_DIR$/exemplos3_mundos/universe.py" />
+        <option value="$PROJECT_DIR$/vaca/cheese.py" />
+        <option value="$PROJECT_DIR$/vaca/test_vaca.py" />
         <option value="$PROJECT_DIR$/vaca/vaca_v1.py" />
-        <option value="$PROJECT_DIR$/vaca/vaca_v1_tests.py" />
+        <option value="$PROJECT_DIR$/vaca/test_vaca_v2.py" />
+        <option value="$PROJECT_DIR$/vaca/vaca_v2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="212" />
-    <option name="width" value="812" />
+    <option name="x" value="-1" />
+    <option name="width" value="513" />
     <option name="height" value="743" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -130,42 +146,23 @@
         <subPane>
           <expand>
             <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oficina2017-2" type="462c0819:PsiDirectoryNode" />
+              <item name="oficina2017-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oficina2017-5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oficina2017-2" type="462c0819:PsiDirectoryNode" />
-              <item name="exemplos1_funcoes" type="462c0819:PsiDirectoryNode" />
+              <item name="oficina2017-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oficina2017-5" type="462c0819:PsiDirectoryNode" />
+              <item name="exemplos3_mundos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oficina2017-2" type="462c0819:PsiDirectoryNode" />
-              <item name="exercicios3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oficina2017-2" type="462c0819:PsiDirectoryNode" />
-              <item name="exercicios4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oficina2017-2" type="462c0819:PsiDirectoryNode" />
+              <item name="oficina2017-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oficina2017-5" type="462c0819:PsiDirectoryNode" />
               <item name="universe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oficina2017-2" type="462c0819:PsiDirectoryNode" />
+              <item name="oficina2017-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oficina2017-5" type="462c0819:PsiDirectoryNode" />
               <item name="vaca" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="oficina2017-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.4.3 (/usr/bin/python3.4) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -175,19 +172,9 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vaca" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vaca" />
-      <recent name="$PROJECT_DIR$/exercicios3" />
-      <recent name="$PROJECT_DIR$/exemplos3_mundos" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -202,8 +189,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for MeusTestes.testTrata_tecla">
-    <configuration name="Unittests for MeusTestes.testAndar" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for test_vaca_v2.MeusTestes.testAndar">
+    <configuration name="Unittests for test_vaca_v1.MeusTestes.testAndar" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -212,12 +199,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
+      <module name="oficina2017-5" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MeusTestes.testAndar&quot;" />
+      <option name="_new_target" value="&quot;test_vaca_v1.MeusTestes.testAndar&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for MeusTestes.testTrata_tecla" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_vaca_v1.MeusTestes.testTrata_tecla" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -226,159 +213,38 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
+      <module name="oficina2017-5" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MeusTestes.testTrata_tecla&quot;" />
+      <option name="_new_target" value="&quot;test_vaca_v1.MeusTestes.testTrata_tecla&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
+    <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration name="foguete" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exemplos3_mundos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vaca" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exemplos3_mundos/foguete.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <module name="oficina2017-5" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vaca_v2.MeusTestes.testAndar&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="semaforo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in test_vaca_v1.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercicios3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vaca" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercicios3/semaforo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <module name="oficina2017-5" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/vaca/test_vaca_v1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="vaca_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -391,26 +257,26 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oficina2017" />
+      <module name="oficina2017-5" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vaca/vaca_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.foguete" />
-      <item index="1" class="java.lang.String" itemvalue="Python.semaforo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.vaca_v1" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for MeusTestes.testAndar" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for MeusTestes.testTrata_tecla" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_vaca_v1.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_vaca_v1.MeusTestes.testTrata_tecla" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_vaca_v1.MeusTestes.testAndar" />
+      <item index="3" class="java.lang.String" itemvalue="Python.vaca_v1" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_vaca_v2.MeusTestes.testAndar" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for MeusTestes.testTrata_tecla" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for test_vaca_v2.MeusTestes.testAndar" />
         <item index="1" class="java.lang.String" itemvalue="Python.vaca_v1" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for MeusTestes.testAndar" />
-        <item index="3" class="java.lang.String" itemvalue="Python.semaforo" />
-        <item index="4" class="java.lang.String" itemvalue="Python.foguete" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_vaca_v1.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_vaca_v1.MeusTestes.testTrata_tecla" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_vaca_v1.MeusTestes.testAndar" />
       </list>
     </recent_temporary>
   </component>
@@ -419,109 +285,67 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73a083ca-ab37-47d0-b3b7-f52687934c10" name="Default" comment="" />
-      <created>1502227065276</created>
+      <changelist id="ca26220f-981c-4791-8483-b84531c8f832" name="Default" comment="" />
+      <created>1505436105869</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1502227065276</updated>
+      <updated>1505436105869</updated>
     </task>
-    <task id="LOCAL-00001" summary="Aula 22/08.">
-      <created>1503451422486</created>
+    <task id="LOCAL-00001" summary="Aula 15/09">
+      <created>1505526208562</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1503451422486</updated>
+      <updated>1505526208562</updated>
     </task>
-    <task id="LOCAL-00002" summary="Aula 24/08.">
-      <created>1503625322927</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1503625322927</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Aula 25/08.">
-      <created>1503711614432</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1503711614432</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Exemplo foguete.">
-      <created>1504055431489</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1504055431489</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Aula 05/09.">
-      <created>1504662108942</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1504662108942</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Aula 05/09. (fix)">
-      <created>1504662671462</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1504662671462</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Aula 12/09.">
-      <created>1505267546962</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1505267546962</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 38m 06s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_MeusTestes_testTrata_tecla - 2017.09.15 at 22h 30m 51s.xml">
+      <configuration name="Unittests for test_vaca.MeusTestes.testTrata_tecla" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 40m 34s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_v2_MeusTestes_testAndar - 2017.09.22 at 22h 09m 47s.xml">
+      <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 42m 29s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_v2_MeusTestes_testAndar - 2017.09.22 at 22h 10m 09s.xml">
+      <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 43m 27s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_v2_MeusTestes_testAndar - 2017.09.22 at 22h 15m 09s.xml">
+      <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 43m 53s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_v2_MeusTestes_testAndar - 2017.09.22 at 22h 15m 30s.xml">
+      <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 44m 17s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_v2_MeusTestes_testAndar - 2017.09.22 at 22h 15m 43s.xml">
+      <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 44m 42s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_for_test_vaca_v2_MeusTestes_testAndar - 2017.09.22 at 22h 17m 34s.xml">
+      <configuration name="Unittests for test_vaca_v2.MeusTestes.testAndar" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 47m 41s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_in_test_vaca_py - 2017.09.15 at 22h 29m 13s.xml">
+      <configuration name="Unittests in test_vaca.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 48m 18s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_in_test_vaca_py - 2017.09.15 at 22h 30m 54s.xml">
+      <configuration name="Unittests in test_vaca.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_foguete_testes_MeuTeste_testDesce - 2017.08.31 at 21h 48m 27s.xml">
-      <configuration name="Unittests for foguete_testes.MeuTeste.testDesce" configurationId="tests" />
+    <history-entry file="Unittests_in_test_vaca_py - 2017.09.15 at 22h 32m 19s.xml">
+      <configuration name="Unittests in test_vaca.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="212" y="0" width="1026" height="743" extended-state="6" />
+    <frame x="-1" y="0" width="1026" height="743" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26757812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08199357" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48392284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25080386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.048231512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14308682" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -532,239 +356,197 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aula 22/08." />
-    <MESSAGE value="Aula 24/08." />
-    <MESSAGE value="Aula 25/08." />
-    <MESSAGE value="Exemplo foguete." />
-    <MESSAGE value="Aula 05/09." />
-    <MESSAGE value="Aula 05/09. (fix)" />
-    <MESSAGE value="Aula 12/09." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 12/09." />
+    <MESSAGE value="Aula 15/09" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 15/09" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/vaca/vaca_v1.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="10" />
+          <line>132</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gato.py" />
-    <entry file="file://$PROJECT_DIR$/cat1.png" />
-    <entry file="file://$PROJECT_DIR$/templates.py" />
-    <entry file="file://$PROJECT_DIR$/universe.py" />
-    <entry file="file://$PROJECT_DIR$/templates.py" />
-    <entry file="file://$PROJECT_DIR$/cat1.png" />
-    <entry file="file://$PROJECT_DIR$/universe.py" />
-    <entry file="file://$PROJECT_DIR$/gato.py" />
-    <entry file="file://$PROJECT_DIR$/vaca.py" />
-    <entry file="file://$PROJECT_DIR$/exercicios2/exercicios2.py">
+    <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercicios1/exercicios.py">
+    <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universe/templates.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos1/test.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos1/cont_regressiva.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos1/aula3-2.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos1/aula3.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos2/aula18-08.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos2/exemplos_definicoes.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos2/velocidade.py" />
-    <entry file="file://$PROJECT_DIR$/universe/gato.py" />
-    <entry file="file://$PROJECT_DIR$/universe/vaca.py" />
-    <entry file="file://$PROJECT_DIR$/exercicios2/exemplo_composto2.py" />
-    <entry file="file://$PROJECT_DIR$/exercicios2/exemplo_compostos2408.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos2/testepygame.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos2/gato1.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos1/oficina-exemplos.py" />
-    <entry file="file://$PROJECT_DIR$/exercicios2/exemplo_compostos.py" />
-    <entry file="file://$PROJECT_DIR$/universe/contagem_regressiva.py" />
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/universe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universe/universe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos1_funcoes/aula3-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/contagem_regressiva.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/testepygame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1247971765/pygame/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2973">
-          <caret line="140" column="1" lean-forward="false" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/foguete.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universe/world_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1247971765/pygame/transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/foguete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/foguete_testes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercicios3/semaforo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercicios4/bolinha.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vaca/universe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercicios3/universe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vaca/vaca-ino.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercicios4/rastreador_mouse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exercicios4/quadrado_giratorio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/gato_testes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/gato.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vaca/vaca_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="2880">
+          <caret line="120" column="33" lean-forward="false" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vaca/vaca_v1_tests.py">
+    <entry file="file://$PROJECT_DIR$/exercicios3/foguete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/contagem_regressiva.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/cheese.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1247971765/pygame/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2427">
+          <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.4/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.4/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="791" column="8" lean-forward="false" selection-start-line="791" selection-start-column="8" selection-end-line="791" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universe/world_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercicios3/foguete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/universe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/universe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exemplos3_mundos/contagem_regressiva.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1608">
+          <caret line="68" column="34" lean-forward="false" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/vaca_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/chupacabra.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/vaca_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vaca/test_vaca_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
