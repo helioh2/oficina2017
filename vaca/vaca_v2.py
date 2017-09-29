@@ -29,6 +29,9 @@ X_CC = LARGURA // 2
 
 PAREDE_ESQUERDA = 0 + IMG_VACA_INO.get_width()//2
 PAREDE_DIREITA = LARGURA - IMG_VACA_INO.get_width()//2
+PAREDE_CIMA = IMG_VACA_INO.get_height()//2
+PAREDE_BAIXO = ALTURA - IMG_VACA_INO.get_height()//2
+
 
 '''==================='''
 '''# Definições de dados: '''
@@ -57,15 +60,39 @@ def fn_para_vaca(v):
 
 '''
 
+from namedlist import namedlist
+Chupacabra = namedlist("Chupacabra", "y, dy")  #estrutura da Vaca
+
+''' Chupacabra pode ser criada como: Chupacabra(Int[0,ALTURA], Int)
+interp.: representa a posicao y do chupacabra, e o deslocamento
+a cada tick no eixo y, chamado de dy
+Exemplos:
+'''
+CC_INICIAL = Chupacabra(PAREDE_CIMA, 3)
+CC_MEIO = Chupacabra(ALTURA//2, 3)
+CC_FIM = Chupacabra(PAREDE_BAIXO, 3)
+CC_VIRANDO = Chupacabra(PAREDE_BAIXO, -3)
+CC_VOLTANDO = Chupacabra(ALTURA//2, -3)
+'''
+Template para funções que recebem Chupacabra:
+def fn_para_cc(cc):
+    if cc.y < 0 or cc.y > LARGURA:
+        return "Erro: cc invalido"
+    else:
+        ... cc.y
+            cc.dy
+'''
+
+
 
 '''===================='''
 ''' Funções: '''
 
 '''
-andar: Vaca -> Vaca
+mover_vaca: Vaca -> Vaca
 Produz a próxima vaca (ou seja, fazer ela andar)
 '''
-def andar(v):
+def mover_vaca(v):
     if v.x < 0 or v.x > LARGURA:
         return "Erro: vaca invalida"
     else:
@@ -88,11 +115,11 @@ def andar(v):
 
 
 '''
-desenha: Vaca -> Imagem
+desenha_vaca: Vaca -> Imagem
 Desenha a vaca na tela
 !!!
 '''
-def desenha(v):
+def desenha_vaca(v):
     if v.dx < 0:
         TELA.blit(IMG_VACA_VORTANO,
                   (v.x - IMG_VACA_VORTANO.get_width() // 2,
@@ -104,12 +131,10 @@ def desenha(v):
 
 
 '''
-trata_tecla: Vaca, EventoTecla -> Vaca
+trata_tecla_vaca: Vaca, EventoTecla -> Vaca
 Quando teclar espaço, inverte a direção da vaca
-!!!
 '''
-
-def trata_tecla(v, tecla):
+def trata_tecla_vaca(v, tecla):
     if tecla == pg.K_SPACE:
         v.dx = - v.dx
     return v
@@ -125,9 +150,9 @@ def trata_tecla(v, tecla):
 
 def main(inic):
     big_bang(inic, tela=TELA,
-             quando_tick=andar,
-             desenhar=desenha,
-             quando_tecla=trata_tecla)
+             quando_tick=mover_vaca,
+             desenhar=desenha_vaca,
+             quando_tecla=trata_tecla_vaca)
 
-# main(VACA_INICIAL)
+main(VACA_INICIAL)
 
