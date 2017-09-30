@@ -126,9 +126,26 @@ class Aluno:
     '''
 
 
+''' Maneira 3: dado mutavel usando namedlist'''
 
+from namedlist import namedlist
 
-
+Bolinha = namedlist("Bolinha", "x dx y dy")
+'''
+Bolinha eh criada como: Bolinha(Int+ Int Int+ Int)
+interp. uma bolinha na posicao (x,y) e deslocamentos
+dx e dy.
+Ex:
+'''
+BOLA_INICIAL = Bolinha(100,3,100,3)
+BOLA2 = Bolinha(200,-3,200,3)
+'''Template para dados do tipo Bolinha:
+def fn_para_bolinha(bola):
+    ... bola.x
+        bola.dx
+        bola.y
+        bola.dy
+'''
 
 
 

@@ -10,6 +10,7 @@ def big_bang(inic, tela,
              frequencia=28, \
              desenhar=lambda e: pg.Surface((0,0)), \
              quando_tecla=lambda e, k: e, \
+             quando_solta_tecla=lambda e, k: e, \
              quando_mouse=lambda e, x, y, ev: e, \
              parar_quando=lambda e: False):
 
@@ -33,7 +34,8 @@ def big_bang(inic, tela,
 
             if event.type == pg.KEYDOWN:
                 estado = quando_tecla(estado, event.key)
-
+            elif event.type == pg.KEYUP:
+                estado = quando_solta_tecla(estado, event.key)
             elif event.type in [pg.MOUSEBUTTONDOWN, pg.MOUSEBUTTONUP, pg.MOUSEMOTION]:
                 x, y = pg.mouse.get_pos()
                 estado = quando_mouse(estado, x, y, event.type)
