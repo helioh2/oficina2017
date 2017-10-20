@@ -62,18 +62,23 @@ def fn_para_vaca(v):
 
 '''
 
-Chupacabra = namedlist("Chupacabra", "y, dy")  #estrutura do Chupacabra
+Chupacabra = namedlist("Chupacabra", "x, y, dy")  #estrutura do Chupacabra
 
-''' Chupacabra pode ser criada como: Chupacabra(Int[PAREDE_CIMA, PAREDE_BAIXO], Int)
-interp.: representa a posicao y do chupacabra, e o deslocamento
+''' Chupacabra pode ser criada como: Chupacabra(Int[PAREDE_ESQUERDA, PAREDE_DIREITA], Int[PAREDE_CIMA, PAREDE_BAIXO], Int)
+interp.: representa a posicao x e y do chupacabra, e o deslocamento
 a cada tick no eixo y, chamado de dy
 Exemplos:
 '''
-CC_INICIAL = Chupacabra(PAREDE_CIMA, 3)
-CC_MEIO = Chupacabra(ALTURA//2, 3)
-CC_FIM = Chupacabra(PAREDE_BAIXO, 3)
-CC_VIRANDO = Chupacabra(PAREDE_BAIXO, -3)
-CC_VOLTANDO = Chupacabra(ALTURA//2, -3)
+CC_INICIAL = Chupacabra(X_CC, PAREDE_CIMA, 3)
+CC_MEIO = Chupacabra(X_CC, ALTURA//2, 3)
+CC_FIM = Chupacabra(X_CC, PAREDE_BAIXO, 3)
+CC_VIRANDO = Chupacabra(X_CC, PAREDE_BAIXO, -3)
+CC_VOLTANDO = Chupacabra(X_CC, ALTURA//2, -3)
+
+CC2 = Chupacabra(int(LARGURA*0.75), ALTURA//2, 3)
+CC3 = Chupacabra(LARGURA//4, PAREDE_BAIXO, 3)
+
+
 '''
 Template para funções que recebem Chupacabra:
 def fn_para_cc(cc):
@@ -93,7 +98,7 @@ ou nao
 Exemplos:
 '''
 JOGO_INICIAL = Jogo(VACA_INICIAL, CC_INICIAL, False)
-JOGO_GAME_OVER = Jogo(Vaca(X_CC, 3), Chupacabra(Y_VACA, 3), True)
+JOGO_GAME_OVER = Jogo(Vaca(X_CC, 3), Chupacabra(X_CC, Y_VACA, 3), True)
 
 '''Template para funcao que recebe Jogo:
 def fn_para_jogo(jogo):
@@ -174,7 +179,7 @@ Verifica se a vaca e o chupacabra colidiram
 def colidirem(vaca, chupacabra):
     raio1 = IMG_VACA_INO.get_width()/2
     raio2 = IMG_CC_VORTANO.get_width()/2
-    d = distancia(vaca.x, Y_VACA, X_CC, chupacabra.y)
+    d = distancia(vaca.x, Y_VACA, chupacabra.x, chupacabra.y)
     if d <= raio1 + raio2:
         return True
     #else
@@ -275,5 +280,5 @@ def main(inic):
              desenhar=desenha_jogo,
              quando_tecla=trata_tecla)
 
-main(JOGO_INICIAL)
+# main(JOGO_INICIAL)
 
