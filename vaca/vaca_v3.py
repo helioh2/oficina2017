@@ -17,6 +17,7 @@ try:
     IMG_VACA_INO = pg.image.load('vaca-ino.png')    #os.path.join('', 'cat1.png'))
     IMG_VACA_VORTANO = pg.transform.flip(IMG_VACA_INO, True, False)
     IMG_CC_VORTANO = pg.image.load('chupacabra.jpg')
+    IMG_CC_VORTANO = pg.transform.scale(IMG_CC_VORTANO, (20,20))
     IMG_CC_INO = pg.transform.flip(IMG_CC_VORTANO, True, False)
 except:
     IMG_VACA_INO = pg.Surface((100,100),pg.SRCALPHA)  #imagem vazia para o caso de nao funcionar o carregamento
@@ -89,16 +90,19 @@ def fn_para_cc(cc):
             cc.dy
 '''
 
-Jogo = namedlist("Jogo", "vaca, chupacabra, game_over")
+Jogo = namedlist("Jogo", "vaca, chupacabras, game_over")
 
-''' Jogo eh criado como: Jogo(Vaca, Chupacabra, Boolean)
-interp. Um jogo é composto por uma vaca, um chupacabra,
+''' Jogo eh criado como: Jogo(Vaca, List<Chupacabra>, Boolean)
+interp. Um jogo é composto por uma vaca, vários chupacabras,
 e uma flag (game_over) que indica se o jogo está acontecendo
 ou nao
 Exemplos:
 '''
-JOGO_INICIAL = Jogo(VACA_INICIAL, CC_INICIAL, False)
-JOGO_GAME_OVER = Jogo(Vaca(X_CC, 3), Chupacabra(X_CC, Y_VACA, 3), True)
+JOGO_INICIAL0 = Jogo(VACA_INICIAL, [CC_INICIAL], False)
+JOGO_GAME_OVER = Jogo(Vaca(X_CC, 3), [Chupacabra(X_CC, Y_VACA, 3)], True)
+
+JOGO_INICIAL = Jogo(VACA_INICIAL, [CC2, CC_INICIAL, CC3], False)
+
 
 '''Template para funcao que recebe Jogo:
 def fn_para_jogo(jogo):
@@ -192,11 +196,18 @@ A funcao que eh chamada a cada tick para o jogo
 !!!
 '''
 def mover_jogo(jogo):
-    if not colidirem(jogo.vaca, jogo.chupacabra):
-        jogo.vaca = mover_vaca(jogo.vaca)
-        jogo.chupacabra = mover_cc(jogo.chupacabra)   # funcao auxiliar (helper)
-    else:
-        jogo.game_over = True
+
+    for chupacabra in jogo.chupacabras:
+        if colidirem(jogo.vaca, chupacabra):
+            jogo.game_over = True
+            return jogo
+
+    #else
+    mover_vaca(jogo.vaca)
+
+    for chupacabra in jogo.chupacabras:
+        mover_cc(chupacabra)  # funcao auxiliar (helper)
+
     return jogo
 
 
@@ -221,7 +232,7 @@ Desenha o chupacabra
 '''
 def desenha_chupacabra(chupacabra):
     TELA.blit(IMG_CC_VORTANO,
-              (X_CC - IMG_CC_VORTANO.get_width() // 2,
+              (chupacabra.x - IMG_CC_VORTANO.get_width() // 2,
                chupacabra.y - IMG_CC_VORTANO.get_height() // 2))
 
 
@@ -241,7 +252,13 @@ def desenha_jogo(jogo):
 
     else:
         desenha_vaca(jogo.vaca)
-        desenha_chupacabra(jogo.chupacabra)
+
+        # antes
+        # desenha_chupacabra(jogo.chupacabra)
+
+        # depois
+        for chupacabra in jogo.chupacabras:
+            desenha_chupacabra(chupacabra)
 
 
 '''
@@ -280,5 +297,5 @@ def main(inic):
              desenhar=desenha_jogo,
              quando_tecla=trata_tecla)
 
-# main(JOGO_INICIAL)
+main(JOGO_INICIAL)
 
