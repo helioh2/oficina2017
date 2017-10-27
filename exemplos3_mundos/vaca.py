@@ -1,6 +1,6 @@
-from universe import *
 import pygame as pg
 
+from universe.universe import *
 
 # Preparacao da Tela:
 

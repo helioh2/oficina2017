@@ -18,6 +18,7 @@ try:
     IMG_VACA_INO = pg.image.load('vaca-ino.png')    #os.path.join('', 'cat1.png'))
     IMG_VACA_VORTANO = pg.transform.flip(IMG_VACA_INO, True, False)
     IMG_CC_VORTANO = pg.image.load('chupacabra.jpg')
+    IMG_CC_VORTANO = pg.transform.scale(IMG_CC_VORTANO, (20,20))
     IMG_CC_INO = pg.transform.flip(IMG_CC_VORTANO, True, False)
 except:
     IMG_VACA_INO = pg.Surface((100,100),pg.SRCALPHA)  #imagem vazia para o caso de nao funcionar o carregamento
@@ -26,7 +27,7 @@ except:
     IMG_CC_INO = pg.Surface((100,100),pg.SRCALPHA)
     print("ERRO: Imagens nao foram carregadas.")
 
-Y_VACA = ALTURA // 2
+Y_VACA = ALTURA - IMG_VACA_INO.get_height()//2
 X_CC = LARGURA // 2
 
 PAREDE_ESQUERDA = 0 + IMG_VACA_INO.get_width()//2
@@ -34,6 +35,8 @@ PAREDE_DIREITA = LARGURA - IMG_VACA_INO.get_width()//2
 
 PAREDE_CIMA = IMG_CC_INO.get_height()//2
 PAREDE_BAIXO = ALTURA - IMG_CC_INO.get_height()//2
+
+DX = 3
 
 
 '''==================='''
@@ -47,7 +50,7 @@ interp.: representa a posicao x da vaca, e o deslocamento
 a cada tick no eixo x, chamado de dx
 Exemplos:
 '''
-VACA_INICIAL = Vaca(PAREDE_ESQUERDA, 3)
+VACA_INICIAL = Vaca(PAREDE_ESQUERDA, 0)
 # VACA_MEIO = Vaca(LARGURA//2, 3)
 VACA_FIM = Vaca(LARGURA, 3)
 VACA_VIRANDO = Vaca(LARGURA, -3)
@@ -63,18 +66,23 @@ def fn_para_vaca(v):
 
 '''
 
-Chupacabra = namedlist("Chupacabra", "y, dy")  #estrutura do Chupacabra
+Chupacabra = namedlist("Chupacabra", "x, y, dy")  #estrutura do Chupacabra
 
-''' Chupacabra pode ser criada como: Chupacabra(Int[PAREDE_CIMA, PAREDE_BAIXO], Int)
-interp.: representa a posicao y do chupacabra, e o deslocamento
+''' Chupacabra pode ser criada como: Chupacabra(Int[PAREDE_ESQUERDA, PAREDE_DIREITA], Int[PAREDE_CIMA, PAREDE_BAIXO], Int)
+interp.: representa a posicao x e y do chupacabra, e o deslocamento
 a cada tick no eixo y, chamado de dy
 Exemplos:
 '''
-CC_INICIAL = Chupacabra(PAREDE_CIMA, 3)
-CC_MEIO = Chupacabra(ALTURA//2, 3)
-CC_FIM = Chupacabra(PAREDE_BAIXO, 3)
-CC_VIRANDO = Chupacabra(PAREDE_BAIXO, -3)
-CC_VOLTANDO = Chupacabra(ALTURA//2, -3)
+CC_INICIAL = Chupacabra(X_CC, PAREDE_CIMA, 3)
+CC_MEIO = Chupacabra(X_CC, ALTURA//2, 3)
+CC_FIM = Chupacabra(X_CC, PAREDE_BAIXO, 3)
+CC_VIRANDO = Chupacabra(X_CC, PAREDE_BAIXO, -3)
+CC_VOLTANDO = Chupacabra(X_CC, ALTURA//2, -3)
+
+CC2 = Chupacabra(int(LARGURA*0.75), ALTURA//2, 3)
+CC3 = Chupacabra(LARGURA//4, PAREDE_BAIXO, 3)
+
+
 '''
 Template para funções que recebem Chupacabra:
 def fn_para_cc(cc):
@@ -85,16 +93,19 @@ def fn_para_cc(cc):
             cc.dy
 '''
 
-Jogo = namedlist("Jogo", "vaca, chupacabra, game_over")
+Jogo = namedlist("Jogo", "vaca, chupacabras, game_over")
 
-''' Jogo eh criado como: Jogo(Vaca, Chupacabra, Boolean)
-interp. Um jogo é composto por uma vaca, um chupacabra,
+''' Jogo eh criado como: Jogo(Vaca, List<Chupacabra>, Boolean)
+interp. Um jogo é composto por uma vaca, vários chupacabras,
 e uma flag (game_over) que indica se o jogo está acontecendo
 ou nao
 Exemplos:
 '''
-JOGO_INICIAL = Jogo(VACA_INICIAL, CC_INICIAL, False)
-JOGO_GAME_OVER = Jogo(Vaca(X_CC, 3), Chupacabra(Y_VACA, 3), True)
+JOGO_INICIAL0 = Jogo(VACA_INICIAL, [CC_INICIAL], False)
+JOGO_GAME_OVER = Jogo(Vaca(X_CC, 3), [Chupacabra(X_CC, Y_VACA, 3)], True)
+
+JOGO_INICIAL = Jogo(VACA_INICIAL, [CC2, CC_INICIAL, CC3], False)
+
 
 '''Template para funcao que recebe Jogo:
 def fn_para_jogo(jogo):
@@ -175,7 +186,7 @@ Verifica se a vaca e o chupacabra colidiram
 def colidirem(vaca, chupacabra):
     raio1 = IMG_VACA_INO.get_width()/2
     raio2 = IMG_CC_VORTANO.get_width()/2
-    d = distancia(vaca.x, Y_VACA, X_CC, chupacabra.y)
+    d = distancia(vaca.x, Y_VACA, chupacabra.x, chupacabra.y)
     if d <= raio1 + raio2:
         return True
     #else
@@ -185,14 +196,20 @@ def colidirem(vaca, chupacabra):
 '''
 mover_jogo: Jogo -> Jogo
 A funcao que eh chamada a cada tick para o jogo
-!!!
 '''
 def mover_jogo(jogo):
-    if not colidirem(jogo.vaca, jogo.chupacabra):
-        jogo.vaca = mover_vaca(jogo.vaca)
-        jogo.chupacabra = mover_cc(jogo.chupacabra)   # funcao auxiliar (helper)
-    else:
-        jogo.game_over = True
+
+    for chupacabra in jogo.chupacabras:
+        if colidirem(jogo.vaca, chupacabra):
+            jogo.game_over = True
+            return jogo
+
+    #else
+    mover_vaca(jogo.vaca)
+
+    for chupacabra in jogo.chupacabras:
+        mover_cc(chupacabra)  # funcao auxiliar (helper)
+
     return jogo
 
 
@@ -217,7 +234,7 @@ Desenha o chupacabra
 '''
 def desenha_chupacabra(chupacabra):
     TELA.blit(IMG_CC_VORTANO,
-              (X_CC - IMG_CC_VORTANO.get_width() // 2,
+              (chupacabra.x - IMG_CC_VORTANO.get_width() // 2,
                chupacabra.y - IMG_CC_VORTANO.get_height() // 2))
 
 
@@ -237,7 +254,13 @@ def desenha_jogo(jogo):
 
     else:
         desenha_vaca(jogo.vaca)
-        desenha_chupacabra(jogo.chupacabra)
+
+        # antes
+        # desenha_chupacabra(jogo.chupacabra)
+
+        # depois
+        for chupacabra in jogo.chupacabras:
+            desenha_chupacabra(chupacabra)
 
 
 '''
@@ -245,8 +268,16 @@ trata_tecla_vaca: Vaca, EventoTecla -> Vaca
 Quando teclar espaço, inverte a direção da vaca
 '''
 def trata_tecla_vaca(vaca, tecla):
-    if tecla == pg.K_SPACE:
-        vaca.dx = - vaca.dx
+    # if tecla == pg.K_SPACE:
+    #     vaca.dx = - vaca.dx
+    # if tecla == pg.K_LEFT:
+    #     vaca.x = vaca.x - abs(vaca.dx)
+    # elif tecla == pg.K_RIGHT:
+    #     vaca.x = vaca.x + abs(vaca.dx)
+    if tecla == pg.K_LEFT:
+        vaca.dx = -DX
+    elif tecla == pg.K_RIGHT:
+        vaca.dx = DX
     return vaca
 
 
@@ -262,6 +293,21 @@ def trata_tecla(jogo, tecla):
         return jogo
 
 
+'''                                             
+trata_solta_tecla: Vaca, EventoTecla -> Vaca    
+Trata solta tecla vaca                 
+'''
+def trata_solta_tecla_vaca(vaca, tecla):
+   if tecla == pg.K_LEFT or tecla == pg.K_RIGHT:
+       vaca.dx = 0
+   return vaca
+
+'''trata_solta_tecla: Jogo, EventoTecla -> Jogo
+Trata solta tecla geral
+'''
+def trata_solta_tecla(jogo, tecla):
+    trata_solta_tecla_vaca(jogo.vaca, tecla)
+    return jogo
 
 ''' ================= '''
 ''' Main (Big Bang):
@@ -274,7 +320,9 @@ def main(inic):
     big_bang(inic, tela=TELA,
              quando_tick=mover_jogo,
              desenhar=desenha_jogo,
-             quando_tecla=trata_tecla)
+             quando_tecla=trata_tecla,
+             quando_solta_tecla=trata_solta_tecla
+             )
 
 main(JOGO_INICIAL)
 

@@ -1,5 +1,5 @@
 import unittest
-from vaca_v3 import *
+from vaca_v4 import *
 
 
 class MeusTestes(unittest.TestCase):
@@ -26,10 +26,15 @@ class MeusTestes(unittest.TestCase):
         self.assertEqual(mover_vaca(Vaca(PAREDE_ESQUERDA + 1, -3)), Vaca(PAREDE_ESQUERDA, -3))
 
     def testTrata_tecla(self):
-        self.assertEqual(trata_tecla_vaca(Vaca(50, 3), pg.K_SPACE), Vaca(50, -3))
-        self.assertEqual(trata_tecla_vaca(Vaca(100, -3), pg.K_SPACE), Vaca(100, 3))
+        self.assertEqual(trata_tecla_vaca(Vaca(50, 0), pg.K_LEFT), Vaca(50, -DX))
+        self.assertEqual(trata_tecla_vaca(Vaca(50, 0), pg.K_RIGHT), Vaca(50, DX))
+        # self.assertEqual(trata_tecla_vaca(Vaca(100, -3), pg.K_SPACE), Vaca(100, 3))
         self.assertEqual(trata_tecla_vaca(Vaca(50, 3), pg.K_a), Vaca(50, 3))
         # self.assertNotEqual( trata_tecla(Vaca(100, -3), pg.K_a), Vaca(100, 3))
+
+    def testTrataSoltaTecla(self):
+        self.assertEqual(trata_solta_tecla_vaca(Vaca(50, -DX), pg.K_LEFT), Vaca(50, 0))
+        self.assertEqual(trata_solta_tecla_vaca(Vaca(50, DX), pg.K_RIGHT), Vaca(50, 0))
 
     def testMover_cc(self):
         # Chupacabra andando para frente (sem bater na parede)

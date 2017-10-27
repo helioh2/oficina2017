@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-from universe import *
 import math
+
+from universe.universe import *
 
 ''' Meu programa da vaquinha 2.0 (com um chupacabra) '''
 
@@ -118,7 +119,7 @@ def fn_para_jogo(jogo):
 ''' Funções: '''
 
 '''
-mover_vaca: Vaca -> Vaca
+mover_vaca_x: Vaca -> Vaca
 Produz a próxima vaca (ou seja, fazer ela andar)
 '''
 def mover_vaca(vaca):

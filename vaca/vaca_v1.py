@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from universe import *
+from universe.universe import *
 
 ''' Meu programa da vaquinha 1.0 '''
 

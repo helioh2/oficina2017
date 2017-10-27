@@ -1,6 +1,7 @@
 
 import unittest
-from universe import *
+
+from universe.universe import *
 
 # Preparacao da Tela:
 

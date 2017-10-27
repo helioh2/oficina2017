@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 
-from universe import *
-
 ''' Meu programa mundo  (torne isto mais específico) '''
 
 '''==================='''
