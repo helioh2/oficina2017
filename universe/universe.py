@@ -13,7 +13,8 @@ def big_bang(inic, tela,
              quando_solta_tecla=lambda e, k: e, \
              quando_mouse=lambda e, x, y, ev: e, \
              parar_quando=lambda e: False,\
-             modo_debug=False):
+             modo_debug=False,
+             fonte_debug = 15):
 
     pg.init()
     estado = inic
@@ -46,18 +47,18 @@ def big_bang(inic, tela,
         tela.fill(COR_BRANCO)
         desenhar(estado)
         if modo_debug:
-            escreve_estado(estado, tela)
+            escreve_estado(estado, tela, fonte_debug)
 
         clock.tick(frequencia)
 
-def escreve_estado(estado, tela):
-    myfont = pg.font.SysFont("monospace", 15)
+def escreve_estado(estado, tela, fonte_debug):
+    myfont = pg.font.SysFont("monospace", fonte_debug)
     # texto = str(estado).split(',')
     import re
     texto = re.findall('\[[^\]]*\]|\([^\)]*\)|\"[^\"]*\"|\S+', str(estado))
 
-    counter = 15
+    counter = fonte_debug
     for line in texto:
         label = myfont.render(line, 1, (255, 0, 0))
         tela.blit(label, (5, counter))
-        counter += 15
+        counter += fonte_debug

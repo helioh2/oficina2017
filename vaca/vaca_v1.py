@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from universe.universe import *
+from universe import *
 
 ''' Meu programa da vaquinha 1.0 '''
 
@@ -128,7 +128,8 @@ def main(inic):
     big_bang(inic, tela=TELA,
              quando_tick=andar,
              desenhar=desenha,
-             quando_tecla=trata_tecla)
+             quando_tecla=trata_tecla,
+             modo_debug=True)
 
 main(VACA_INICIAL)
 
