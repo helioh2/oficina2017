@@ -4,7 +4,7 @@
 
 import math
 
-from universe.universe import *
+from universe import *
 
 ''' Meu programa da vaquinha 2.0 (com um chupacabra) '''
 
@@ -37,7 +37,7 @@ PAREDE_CIMA = IMG_CC_INO.get_height()//2
 PAREDE_BAIXO = ALTURA - IMG_CC_INO.get_height()//2
 
 DX = 3
-G = 1
+G = 3
 
 
 '''==================='''
@@ -341,7 +341,8 @@ def main(inic):
              quando_tick=mover_jogo,
              desenhar=desenha_jogo,
              quando_tecla=trata_tecla,
-             quando_solta_tecla=trata_solta_tecla
+             quando_solta_tecla=trata_solta_tecla,
+             modo_debug=True
              )
 
 main(JOGO_INICIAL)

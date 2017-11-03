@@ -4,7 +4,7 @@
 
 import math
 
-from universe.universe import *
+from universe import *
 
 ''' Meu programa da vaquinha 2.0 (com um chupacabra) '''
 
@@ -71,7 +71,7 @@ interp.: representa a posicao x e y do chupacabra, e o deslocamento
 a cada tick no eixo y, chamado de dy
 Exemplos:
 '''
-CC_INICIAL = Chupacabra(X_CC, PAREDE_CIMA, 3)
+CC_INICIAL = Chupacabra(X_CC, PAREDE_BAIXO, -3)
 CC_MEIO = Chupacabra(X_CC, ALTURA//2, 3)
 CC_FIM = Chupacabra(X_CC, PAREDE_BAIXO, 3)
 CC_VIRANDO = Chupacabra(X_CC, PAREDE_BAIXO, -3)
@@ -296,7 +296,8 @@ def main(inic):
     big_bang(inic, tela=TELA,
              quando_tick=mover_jogo,
              desenhar=desenha_jogo,
-             quando_tecla=trata_tecla)
+             quando_tecla=trata_tecla,
+             modo_debug=True)
 
 main(JOGO_INICIAL)
 
