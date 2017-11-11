@@ -80,6 +80,20 @@ class MeusTestes(unittest.TestCase):
 
 
 
+class Vaca:
+    def __init__(self,x,dx):
+        self.x = x
+        self.dx = dx
+
+    def __str__(self):
+        result = "Vaca("
+        result += "x = " + str(self.x) + ", "
+        result += "dx = " + str(self.dx) + ")"
+        return result
+
+
+vaca1 = Vaca(100,200)
+print(vaca1)
 
 
 
