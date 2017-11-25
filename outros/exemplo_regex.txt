@@ -1,0 +1,16 @@
+(ARROZ,FEIJAO,MACARRAO)
+(dfsdfARROZ,FEIJAOdfsd,MACAgfhfgRRAO)
+(ARdfsdfROZ,FEIJdfsfAO,MACsdfsdARRAO)
+(ARRasdadOZ,FEIJAsdasdO,MACghgfhARRAO)
+(ARROsdfsdZ,FEdsfsdIJAO,MACdsfsdARRAO)
+(ARRdsfsdOZ,FEsdfsdIJAO,MACARRAO)
+(sdasda,asdasd,sadasd)
+(sadasd,asdasd,asdas)
+(hwejkqhe,wjehqwjkeh,qwjehqwkh)
+(khedajkh2wjkh,28732973,hj2kh2k)
+)(
+sjsdjshjdh )( , <>)(()()()()(,
+
+
+Busca por: \((.*?)\,(.*?)\,(.*?)\)
+Substitui por: [$1;$2;$3]
